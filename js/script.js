@@ -80,8 +80,7 @@ for(const copy of btnCopy){
 
         alert('Number will be copyed');
         copyCount.innerText = totalCopy;
+        
     })
 
-
-    
 }
