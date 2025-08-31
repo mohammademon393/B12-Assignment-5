@@ -22,7 +22,7 @@ const callHistory = document.getElementById('call-history');
 for( const btn of callButton){
     btn.addEventListener('click', function(){
         const card = btn.parentElement.parentElement;
-        const serviceSubName = card.querySelector('.service-subName').innerText;
+        const serviceSubName = card.querySelector('.name').innerText;
         const serviceNumber = card.querySelector('.service-number').innerText;
         const name = card.querySelector('.name').innerText;
 
@@ -78,6 +78,7 @@ for(const copy of btnCopy){
         const copyCount = document.getElementById('copy-count');
         const totalCopy = copyNumber++;
 
+        alert('Number will be copyed');
         copyCount.innerText = totalCopy;
     })
 
