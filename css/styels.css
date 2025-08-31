@@ -3,21 +3,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
  
     }
     .direction-grid{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         margin-left: 10px;
+        overflow: hidden;
     }
     .card-flex{
         flex-direction:column-reverse;
-            justify-content: center;
-            align-items: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .nav-d2{
+        margin-top: 10px;
     }
     
+    .banner{
+        height: 260px;
+    }
     .banner h1{
         font-size: 28px;
+        overflow: hidden;
     }
     .banner p{
         font-size: 14px;
@@ -25,5 +35,6 @@
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
+        overflow: hidden;
     }
 }
