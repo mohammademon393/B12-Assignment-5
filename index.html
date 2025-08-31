@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css file added -->
+     <link rel="stylesheet" href="css/styels.css">
 </head>
 
 <body>
     <!-- navber design -->
-    <nav class="container max-w-[1280px] mx-auto flex justify-between mt-5">
+    <nav class="container max-w-[1280px] mx-auto flex justify-between mt-5 direction-colas">
         <div class="flex gap-3">
             <div>
                 <img class="h-[50px] w-[50px]" src="./assets/logo.png" alt="">
@@ -48,7 +50,7 @@
     <!-- banner design -->
     <section class="bg-[#dfefff]  mt-5">
         <div
-            class="h-[230px] py-3 bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] mt-8 text-white flex flex-col justify-center items-center  mx-auto">
+            class="h-[230px] py-3 bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] mt-8 text-white flex flex-col justify-center items-center max-w-[1280px] text-center mx-auto banner">
             <img class="h-[90px] w-[90px] text-white" src="./assets/logo.png" alt="">
             <h1 class="font-bold text-[40px]">Emergency Service Directory</h1>
             <p class="font-[600] text-xl">Government Emergency Services at Your Fingertip – A Project by Government of
@@ -60,25 +62,26 @@
 
     <!-- main part here -->
     <main class="bg-[#dfefff]">
-        <section class="container max-w-[1280px] mx-auto flex justify-between gap-[20px] pt-10">
-
+        <section class="container max-w-[1280px] mx-auto flex justify-between gap-[20px] pt-10 card-flex">
 
             <!-- card design parent here -->
-            <div class="main-parent-to-card gap-[20px] grid grid-cols-3 pb-8">
+            <div class="main-parent-to-card gap-[20px] grid grid-cols-3 pb-8 direction-grid">
                 
                 <!-- card body-1 -->
                 <div class="card bg-base-100 w-[300px] shadow-sm">
-                    <div class="flex justify-between px-2">
-                        <img class="w-16 h-16" src="./assets/police.png" alt="Shoes" />
+                    <div class="flex justify-between pt-4 pl-4">
+                        <span class="w-[60px] h-[60px] bg-slate-500 rounded-full p-3">
+                            <img src="./assets/emergency.png" alt="Shoes" />
+                        </span>
                         <button  class="mr-4 heart-btn-card"><i class=" fa-regular fa-heart"></i></button>
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title name">Police Helpline Number</h2>
-                        <p class="service-subName">Police</p>
+                        <h2 class="card-title name">National Emergency Number</h2>
+                        <p class="service-subName">National Emergency</p>
 
                         <h2 class="card-title service-number">999</h2>
                         <span
-                            class="w-[70px] h-[32px] bg-[#F2F2F2] rounded-3xl flex justify-center items-center">police</span>
+                            class="w-[70px] h-[32px] bg-[#F2F2F2] rounded-3xl flex justify-center items-center">All</span>
                     </div>
                     <div class="flex gap-2 justify-center pb-3">
                         <button class="copy-btn btn w-[45%]"><i class="fa-regular fa-copy"></i> Copy</button>
@@ -257,11 +260,8 @@
 
             </div>
 
-
-
-
             <!-- histry part -->
-            <div class="bg-white w-[320px] rounded-lg p-4 mb-8">
+            <div class="bg-white w-[320px] rounded-lg p-4 mb-8 history-sec">
                 <div class="flex justify-between items-center">
                     <h1 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
                     <button id="clear-btn" class="btn rounded-3xl bg-[#00a63e] text-white"> Clear</button>

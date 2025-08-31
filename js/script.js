@@ -47,7 +47,7 @@ for( const btn of callButton){
         div.innerHTML = `
             <div class="bg-[#dfefff] h-[80px] rounded-lg flex justify-between items-center px-1 mt-2">
                         <span>
-                            <h1 class="font-bold w-[70%]">${name}</h1>
+                            <h1 class="font-bold max-w-[70%]">${name}</h1>
                             <p class="font-[400]">${serviceNumber}</p>
                         </span>
                         <span>

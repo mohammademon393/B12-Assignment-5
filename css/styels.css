@@ -1,0 +1,29 @@
+@media screen and (max-width: 576px) {
+    .direction-colas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .direction-grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .card-flex{
+        flex-direction:column-reverse;
+            justify-content: center;
+            align-items: center;
+    }
+    
+    .banner h1{
+        font-size: 28px;
+    }
+    .banner p{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
